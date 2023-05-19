@@ -1,0 +1,43 @@
+{
+  "name": "remove-attr",
+  "description": "A Vite plugin designed specifically for Vue.js projects that allows the removal of specified attributes in production builds. Useful for excluding attributes like 'data-testid' used in testing. Options include specific file extensions, attributes, ignored folders, and files.",
+  "private": false,
+  "version": "0.0.5",
+  "type": "module",
+  "types": "./dist/remove-attributes.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/remove-attributes.umd.cjs",
+  "module": "./dist/remove-attributes.js",
+  "exports": {
+    ".": {
+      "import": "./dist/remove-attributes.js",
+      "require": "./dist/remove-attributes.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --declaration --emitDeclarationOnly",
+    "build-only": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vue",
+    "vuejs",
+    "remove-attributes",
+    "html",
+    "build-tool",
+    "javascript",
+    "typescript",
+    "optimization",
+    "web-development"
+  ]
+}
