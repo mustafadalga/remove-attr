@@ -3,6 +3,13 @@
 This Vite plugin is specifically designed for Vue.js projects. It allows the removal of specified attributes in
 production builds, supporting a variety of options like file extensions, attributes, ignored folders, and files.
 
+<p align="center">
+
+[![vue version](https://img.shields.io/npm/v/remove-attr.svg)](https://www.npmjs.com/package/remove-attr)
+[![vue version](https://img.shields.io/badge/vite-4.3.2-brightgreen.svg)](https://www.npmjs.com/package/remove-attr)
+
+</p>
+
 ## Table of Contents
 
 - [Features](#features)
@@ -50,6 +57,7 @@ export default defineConfig({
 })
 
 ```
+<br /> 
 
 ## Examples
 
@@ -68,6 +76,7 @@ export default defineConfig({
     ]
 })
 ```
+<br /> 
 
 #### Example 2: Ignoring specific folders and files
 
@@ -85,3 +94,10 @@ export default defineConfig({
     ]
 })
 ```
+
+<br /> 
+
+## License
+[![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/remove-attr/blob/main/LICENSE)
+
+
