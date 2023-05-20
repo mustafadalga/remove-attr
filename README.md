@@ -31,7 +31,7 @@ production builds, supporting a variety of options like file extensions, attribu
 You can install this plugin through npm:
 
 ```sh
-npm install --save-dev vite-plugin-remove-attr
+npm install --save-dev remove-attr
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ vite.config.ts file.
 ```typescript
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import removeAttr from 'vite-plugin-remove-attr'
+import removeAttr from 'remove-attr'
 
 export default defineConfig({
     plugins: [
