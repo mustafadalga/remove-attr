@@ -2,8 +2,9 @@
   "include": ["src/**/*.ts"],
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ESNext",
-    "target": "ESNext",
+    "module": "ES6",
+    "target": "ES6",
+     "lib": ["ES6","DOM","DOM.Iterable"],  
     "declaration": true,
     "declarationDir": "dist",
     "moduleResolution": "Node",
