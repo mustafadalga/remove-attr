@@ -3,55 +3,42 @@ import type { Options } from "./types"
 const defaultIgnorePaths: string[] = [
     // Node.js
     'node_modules',
-
+  
     // Git
     '.git',
-
+  
     // IDE configurations
     '.idea', // JetBrains IDEs (e.g., WebStorm)
     '.vscode', // Visual Studio Code
-
+  
     // OS generated files
     '.DS_Store', // macOS
     'Thumbs.db', // Windows
-
-    // Build output
-    'dist',
-    'build',
-
+  
+  
     // Configuration files
     '.env', // Environment variables
-    'config', // General config folder
-
+  
     // Logs
     'logs',
     '*.log',
-
+  
     // Vue.js
     '.nuxt', // Nuxt.js generates this folder
-
+  
     // React.js
     '.next', // Next.js generates this folder
-
+  
     // Remix.js
     '.remix', // Remix.js cache
-
+  
     // Angular
     'e2e', // End-to-end tests in Angular
     'angular.json', // Angular CLI configuration
     'browserslist', // Browser compatibility list for Angular
-
-    // Svelte
-    'public/build', // Default output directory for Svelte
-
-    // Lit
-    'lit.config.js', // Lit configuration file
-
-    // Other
-    'coverage', // Code coverage reports
+  
     '.cache', // Cache files for various tools
-    'public' // Folder commonly used for static assets
-];
+  ];
 
 export function getOptions(options: Options): Options {
     return {
