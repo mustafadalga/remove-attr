@@ -9,6 +9,7 @@ import type {
     Options
 } from "./types";
 import type { Plugin } from "vite"
+import type { SourceDescription } from 'rollup'
 
 export default function removeAttributesPlugin(options: Options): Plugin {
     const optionList: Options = getOptions(options);
@@ -17,18 +18,19 @@ export default function removeAttributesPlugin(options: Options): Plugin {
     return {
         name: 'remove-attributes',
         enforce: 'pre',
-        transform(code: string, id: string): string {
+        transform(code: string, id: string): Partial<SourceDescription> {
+            const map = null
             if (hasIgnorePath(id)) {
-                return code;
+                return {code, map };
             }
             if (hasIgnorePath(id, ignoredPaths)) {
-                return code;
+                return {code, map};
             }
             if (!hasExtension(id, optionList)) {
-                return code;
+                return {code, map};
             }
 
-            return removeAttributes(code, optionList.attributes)
+            return {code: removeAttributes(code, optionList.attributes), map}
         },
     };
 }
