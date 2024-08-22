@@ -42,7 +42,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mustafadalga/remove-attr"
+    "url": "https://github.com/mustafadalga/remove-attr.git"
   },
   "author": "Mustafa Dalga",
   "license": "GPL-3.0"
